@@ -23,7 +23,7 @@ html, body {
     justify-content: center;
     flex-direction: column;
     color: #fff;
-    animation: show 4s 1 forwards;
+    animation: show 5s 1 forwards;
 }
 
 @keyframes show {
