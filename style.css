@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+}
+
+html, body {
+    height: 100vh;
+}
+
+.bg-video{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    min-height: 100%;
+    min-width: 100%;
+}
+
+.container{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
+    animation: show 4s 1 forwards;
+}
+
+@keyframes show {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.container__title{
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 10rem;
+    text-transform: uppercase;
+    background: repeating-linear-gradient(white, white 2px, transparent 2px, transparent 4px);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.container__subtitle{
+    font-family: 'Secular-One', 'sans-serif';
+    font-size: 3rem;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+.container__links{
+    width: 200px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.container__links svg{
+    width: 64px;
+    height: 64px;
+}
+
+.container__links svg g {
+    fill: #fff;
+    transition: all 1s ease;
+}
+
+.container__links svg:hover g {
+    fill: #000;
+}
+
+.container__github svg .path_1{
+    fill: #fff;
+    transition: all 1s ease;
+}
+
+.container__github svg:hover .path_1 {
+    fill: #000;
+}
