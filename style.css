@@ -23,7 +23,8 @@ html, body {
     justify-content: center;
     flex-direction: column;
     color: #fff;
-    animation: show 5s 1 forwards;
+    animation: show 4s 1 forwards;
+    font-family: 'Rajdhani', sans-serif;
 }
 
 @keyframes show {
@@ -36,8 +37,7 @@ html, body {
 }
 
 .container__title{
-    font-family: 'Rajdhani', sans-serif;
-    font-size: 10rem;
+    font-size: 8rem;
     text-transform: uppercase;
     background: repeating-linear-gradient(white, white 2px, transparent 2px, transparent 4px);
     -webkit-background-clip: text;
@@ -45,10 +45,67 @@ html, body {
 }
 
 .container__subtitle{
-    font-family: 'Secular-One', 'sans-serif';
     font-size: 3rem;
     font-weight: 500;
     margin-bottom: 30px;
+}
+
+.links__container{
+    display: flex;
+    justify-content: center;
+}
+
+.container__links{
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.links__title{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.links__item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 150px;
+}
+
+.site__title{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+
+.container svg {
+    width: 64px;
+    height: 64px;
+}
+
+.container svg g, .container svg .path_1, .links__linkedin svg{
+    fill: #fff;
+    transition: all 1s ease;
+}
+
+.container svg:hover g, .container svg:hover .path_1, .links__linkedin svg:hover{
+    fill: #000;
+}
+
+
+.uzprof__link svg  .uzprof__path-1{
+    fill: transparent;
+}
+
+.uzprof__link svg  .uzprof__path-2{
+    transition: all 1s ease;
+    fill: #fff;
+}
+
+.uzprof__link svg:hover  .uzprof__path-2{
+    fill: #000;
 }
 
 @media (max-width: 800px) {
@@ -64,33 +121,13 @@ html, body {
         text-align: center;
         font-size: 2rem;
     }
-}
 
-.container__links{
-    width: 200px;
-    display: flex;
-    justify-content: space-around;
-}
+    .links__item{
+        width: 100px;
+        padding: 10px;
+    }
 
-.container__links svg{
-    width: 64px;
-    height: 64px;
-}
-
-.container__links svg g {
-    fill: #fff;
-    transition: all 1s ease;
-}
-
-.container__links svg:hover g {
-    fill: #000;
-}
-
-.container__github svg .path_1{
-    fill: #fff;
-    transition: all 1s ease;
-}
-
-.container__github svg:hover .path_1 {
-    fill: #000;
+    .site__title{
+        max-width: 100px;
+    }
 }
